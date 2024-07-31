@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>ECOgrease</title>
+
+        <link rel="shortcut icon" href="assets/img/logoIcon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script type="module" src="assets/scripts/fisebase/auth.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="assets/img/mundoSenaiLogo.png" alt="ECOgrease Logo" id="headerImg">
+            <div class="nav">
+                <a href="land.html" class="menuEl">HOME</a>
+                <button id="menuButton" class="menuEl">SOBRE <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <menu id="menuSobre" class="hidden">
+                <a href="politica.html" class="menuEl"><i class="fa-regular fa-handshake"></i> POLÍTICA DE QUALIDADE</a>
+                <a href="info.html" class="menuEl"><i class="fa-regular fa-envelope"></i> INFORMAÇÕES DA EMPRESA</a>
+            </menu>
+        </header>
+
+        <main>
+            <section id="section1">
+                <div class="imgContainer">
+                    <img src="assets/img/logoIcon.png" alt="ECOgrease">
+                </div>
+                <div class="txtContainer">
+                    <h1>DESCUBRA</h1>
+                    <p>A transformação óleo residual de motor<br>em <span class="eco">eco-soluções</span> inovadoras</p>
+                </div>
+                <button id="sec2Arrow"><i class="fa-solid fa-arrow-down"></i></button>
+            </section>
+
+            <section id="section2">
+                <div class="section2main" id="visao">
+                    <h1>Nossa<br><span>VISÃO</span></h1>
+                    <p>
+                        <span class="eco">Eco-soluções</span> a partir de óleo
+                        residual de motor para impactar positivamente
+                        o <span class="eco">meioambiente</span>.
+                    </p>
+                </div>
+
+                <div class="section2main" id="valores">
+                    <h1>Nossos<br><span>VALORES</span></h1>
+                    <ul>
+                        <li>Inovação Sustentável</li>
+                        <li>Compromisso Ambiental</li>
+                        <li>Qualidade e Segurança</li>
+                        <li>Integridade e Ética</li>
+                        <li>Responsabilidade Social</li>
+                        <li>Parceria e Colaboração</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>           
+            <div class="createContainer" id="createContainer">
+                <h1>Cadastre-se!</h1>
+
+                <div class="infos">
+                    <input type="text" placeholder="Nome" class="formEl" id="createName">
+                    <input type="email" placeholder="E-mail" class="formEl" id="createEmail">
+                    <input type="password" placeholder="Senha" class="formEl" id="createPassword">
+                </div>
+                <button class="submit" id="create">Cadastrar</button>
+            </div>
+
+            <div class="loginContainer" id="loginContainer">
+                <h1>Log in</h1>
+                <div class="infos"> 
+                    <input type="email" placeholder="E-mail" class="formEl" id="loginEmail">
+                    <input type="password" placeholder="Senha" class="formEl" id="loginPassword">
+                </div>
+                <button class="submit" id="login">Entrar</button>
+            </div>
+
+            <p id="changeForm">Ja possui uma conta?</p>
+
+            <p id="msg"></p>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/1090c0e9f6.js" crossorigin="anonymous"></script>
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>
