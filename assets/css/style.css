@@ -449,7 +449,7 @@ footer h1 {
 }
 
 /*Mobile Widht*/
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
   * {
     box-sizing: border-box;
     max-width: 100vw;
