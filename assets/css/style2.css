@@ -1,135 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(animations.css);
 
-:root{
-    --color1: rgb(247,250,228);
-    --color2: rgb(158,171,139);
-    --color3: rgb(134,130,126);
-    --color4: rgb(178,197,66);
-    --color5: rgb(62,95,25);
+:root {
+  --color1: rgb(247, 250, 228);
+  --color2: rgb(158, 171, 139);
+  --color3: rgb(134, 130, 126);
+  --color4: rgb(178, 197, 66);
+  --color5: rgb(62, 95, 25);
 }
 
-*{
+@media only screen and (min-width: 651px) {
+  * {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
-
+  
     font-size: 1vw;
-}
-
-body{
+  }
+  
+  body {
     margin: 0;
     width: 100vw;
     min-height: 100vh;
-    
+  
     overflow: hidden;
-}
-
-a{
+  
+    background-color: white;
+  }
+  
+  a {
     text-decoration: none;
     color: var(--color5);
-}
-
-header{
+  }
+  
+  header {
     position: absolute;
     top: 0;
-
-    width: 100%;
+  
+    width: 100vw;
     height: 10%;
-
+  
     background-color: var(--color4);
-
+  
     display: flex;
     justify-content: right;
     align-items: center;
-
+  
     margin-bottom: 0;
-}
-
-header img{
-    width: 7.5%;
+  }
+  
+  #headerImg {
+    width: 5%;
     position: absolute;
-
+  
     left: 2.5%;
-
+  
     cursor: pointer;
-}
-
-header .nav{
+  }
+  
+  .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+  
     width: 20%;
-
+  
     margin-right: 5%;
-}
-
-header .nav a{
+  }
+  
+  .nav a {
     font-size: 2vw;
-}
-
-header .nav button{
+  }
+  
+  .nav button {
     background-color: transparent;
     border: none;
     color: var(--color5);
     cursor: pointer;
-}
-
-menu{
+  }
+  
+  #menuSobre {
     position: absolute;
     right: 0%;
     top: 10vh;
-
+  
     margin: 0;
-    padding: 2%;
-
+    padding: 1%;
+  
     background-color: var(--color5);
-
+  
     display: flex;
     flex-direction: column;
-
+  
     border-bottom-left-radius: 1rem;
-
-    transform: translateX(0);
-    opacity: 1;
+  
     transition: 0.2s;
-
-} .hidden{
-    transform: translateX(100%);
-    opacity: 0;
+  }
+  .hidden {
+    display: none;
     transition: 0.2s;
-}
-
-menu a,i{
+  }
+  
+  menu a,
+  i {
     color: var(--color1);
     margin: 2.5% 0;
-
+  
     cursor: pointer;
-}
-
-#menuButton{
+  }
+  
+  #menuButton {
     font-size: 2vw;
-}
-
-.menuEl{
+  
+    transition: 0.2s;
+  }
+  .menuEl {
     transition: 0.2s;
     font-size: 1vw;
-
-} .menuEl:hover{
+  }
+  .menuEl:hover {
     color: var(--color1);
-
+  
     scale: 0.95;
-
-} .menuEl:active{
+  }
+  .menuEl:active {
     transform: scale(1.1);
-}
-
-.eco{
+  }
+  
+  .eco {
     color: var(--color5);
     font-weight: 600;
-}
-
-.box1{
+  }
+  
+  .box1 {
     width: 15vw;
     height: 5vh;
     background-color: var(--color5);
@@ -137,22 +139,22 @@ menu a,i{
     top: 20%;
     left: 5%;
     border-radius: 10px;
-}
-
-.h1{
+  }
+  
+  .h1 {
     position: absolute;
     top: 30%;
     left: 33%;
     margin: 0;
     color: white;
-}
-
-.p1{
+  }
+  
+  .p1 {
     position: absolute;
     top: 80%;
-}
-
-.box2{
+  }
+  
+  .box2 {
     width: 15vw;
     height: 5vh;
     background-color: var(--color5);
@@ -160,23 +162,22 @@ menu a,i{
     top: 20%;
     left: 55%;
     border-radius: 10px;
-}
-
-.h2{
+  }
+  
+  .h2 {
     position: absolute;
     top: 30%;
     left: 17%;
     margin: 0;
     color: white;
-
-}
-
-.p2{
+  }
+  
+  .p2 {
     position: absolute;
     top: 80%;
-}
-
-.box3{
+  }
+  
+  .box3 {
     width: 15vw;
     height: 5vh;
     background-color: var(--color5);
@@ -184,22 +185,22 @@ menu a,i{
     top: 65%;
     left: 28%;
     border-radius: 10px;
-}
-
-.h3{
+  }
+  
+  .h3 {
     position: absolute;
     top: 10%;
     left: 17%;
     margin: 0;
     color: white;
-}
-
-.p3{
+  }
+  
+  .p3 {
     position: absolute;
     top: 80%;
-}
-
-.box4{
+  }
+  
+  .box4 {
     width: 15vw;
     height: 5vh;
     background-color: var(--color5);
@@ -207,84 +208,83 @@ menu a,i{
     top: 65%;
     left: 80%;
     border-radius: 10px;
-}
-
-.h4{
+  }
+  
+  .h4 {
     position: absolute;
     top: 30%;
     left: 32%;
     margin: 0;
     color: white;
-}
-
-.p4{
+  }
+  
+  .p4 {
     position: absolute;
     top: 80%;
     color: black;
-}
-
-.cientista{
+  }
+  
+  .cientista {
     position: absolute;
     bottom: 250%;
     left: -20%;
     width: 22.5vw;
-}
-
-.planta{
+  }
+  
+  .planta {
     position: absolute;
     width: 15vw;
     top: 800%;
     right: 0%;
-}
-.homemNotebook{
+  }
+  .homemNotebook {
     position: absolute;
     bottom: 250%;
     left: -20%;
     width: 22.5vw;
     top: 800%;
-   
-}
-.economia{
-
+  }
+  .economia {
     position: absolute;
     bottom: 170%;
     left: -20%;
     width: 22.5vw;
-    
-}
-
-.area{
+  }
+  
+  .area {
     width: 60vw;
     height: 75vh;
     background-color: var(--color3);
-
+  
     display: flex;
     flex-direction: column;
-
-    position:absolute;
+  
+    position: absolute;
     left: 0;
     top: 10%;
-
+  
     color: white;
-}
-
-.titulo{
+  }
+  
+  .titulo {
     font-size: 400%;
     width: 100%;
     height: 30%;
-}
-
-.lista{
+  }
+  
+  .lista {
     width: 100%;
     height: 70%;
-
+  
     background-color: var(--color5);
-}
-
-.lista li{
+  }
+  
+  .lista li {
     margin-top: 1%;
     margin-bottom: 1%;
     margin-right: 10%;
-
+  
     font-size: 1.5vw;
+  }
+  
 }
