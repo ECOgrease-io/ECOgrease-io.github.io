@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --color1: rgb(247, 250, 228);
+    --color2: rgb(158, 171, 139);
+    --color3: rgb(134, 130, 126);
+    --color4: rgb(178, 197, 66);
+    --color5: rgb(62, 95, 25);
+}
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: var(--color1);
+
+    padding-top: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color5);
+}
+
+menu a,
+i {
+    color: var(--color1);
+    margin: 2.5% 0;
+
+    cursor: pointer;
+}
+
+#menuButton {
+    font-size: 2vw;
+
+    transition: 0.2s;
+}
+.menuEl {
+    transition: 0.2s;
+    font-size: 1vw;
+}
+.menuEl:hover {
+    color: var(--color1);
+
+    scale: 0.95;
+    }
+.menuEl:active {
+    transform: scale(1.1);
+    }
+
+* {
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 10%;
+
+    background-color: var(--color4);
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 0;
+
+    img {
+        position: absolute;
+        width: 12.5vw;
+        left: 5%;
+        cursor: pointer;
+    }
+    
+    menu {
+
+        position: absolute;
+        right: 0%;
+        top: 9.45vh;
+    
+        margin: 0;
+        padding: 2%;
+    
+        background-color: var(--color5);
+    
+        display: flex;
+        flex-direction: column;
+    
+        border-bottom-left-radius: 1rem;
+    
+        transition: 0.2s;
+    }
+    
+    .menuEl {
+        font-size: 3vw;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        margin-right: 7.5%;
+        margin-left: auto;
+        width: 45vw;
+    }
+    
+    .nav a {
+        font-size: 5vw;
+    }
+    #menuButton {
+        background-color: transparent;
+        border: none;
+        color: var(--color5);
+        cursor: pointer;
+        font-size: 5vw;
+        display: flex;
+    }
+
+    .hidden {
+        display: none !important;
+        transition: 0.2s;
+    }
+
+}
+
+main {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    margin: 0;
+    
+    padding-top: 5.25%;
+    padding-bottom: 5.25%;
+}
+
+.mainInfo{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-right: auto;
+    margin-left: auto;
+
+    color: var(--color5);
+
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+        width: 70%;
+        text-align: left;
+        font-size: 10vw;
+    }
+    img{
+        width: 90%;
+        border: 1px black solid;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.prodContainer{
+    width: 90vw;
+    min-height: 20vh;
+
+    border: 1vw solid var(--color4);
+    border-radius: 6vw;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+
+    padding: 5%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.box{
+    display: inline-block;
+
+    border: var(--color5) 1px solid;
+    width: 30vw;
+    height: 20vh;
+
+    padding: 5%;
+
+    margin: 5% 5%;
+
+    color: var(--color1);
+
+    border-radius: 1rem;
+}
+
+

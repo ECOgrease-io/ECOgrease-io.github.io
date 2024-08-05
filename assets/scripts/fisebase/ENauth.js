@@ -25,7 +25,7 @@ createB.addEventListener("click", () => {
   const auth = getAuth(app);
 
   if (!email || !password) {
-    showMsg("Todos os campos são obrigatórios.");
+    showMsg("All fields are compulsory.");
   } else {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredentials) => {
@@ -34,13 +34,13 @@ createB.addEventListener("click", () => {
       .catch((error) => {
         const errorCode = error.code;
         if (errorCode == "auth/email-already-in-use") {
-          showMsg("Email já cadastrado");
+          showMsg("Email already registered");
         } else if (errorCode == "auth/weak-password") {
-          showMsg("Senha muito fraca");
+          showMsg("Very weak password");
         } else if (errorCode == "auth/invalid-email") {
-          showMsg("Email inválido");
+          showMsg("Invalid email adress");
         } else {
-          showMsg("Não foi possivel fazer o cadastro");
+          showMsg("Couldn't register");
           console.error("Error creating account: " + error.code);
         }
       });
@@ -82,7 +82,7 @@ loginB.addEventListener("click", () => {
     userNameSlot = document.getElementById("userName"),
     change = document.getElementById("changeForm");
   if (!email || !password) {
-    showMsg("Todos os campos são obrigatórios");
+    showMsg("All fields are compulsory");
   } else {
     const auth = getAuth(app);
     signInWithEmailAndPassword(auth, email, password)
@@ -100,11 +100,11 @@ loginB.addEventListener("click", () => {
       .catch((error) => {
         const errorCode = error.code;
         if (errorCode == "auth/invalid-email") {
-          showMsg("Email inválido");
+          showMsg("Invalid email address");
         } else if (errorCode == "auth/invalid-credential") {
-          showMsg("Credenciais inválidas");
+          showMsg("Invalid credentials");
         } else {
-          showMsg("Não foi possível fazer o login");
+          showMsg("Unable to log in");
           console.error("Error signing in:", error.code);
         }
       });
@@ -126,7 +126,7 @@ function loginThen(db, id, sucess, login, slot, change, create) {
         slot.innerHTML = name;
         create.style.display = "none";
       } else {
-        showMsg("Usuário não encontrado");
+        showMsg("User not found");
       }
     })
     .catch((error) => {
@@ -140,7 +140,7 @@ setInterval(()=> {
     document.getElementById("userName").innerHTML = name;
     document.getElementById("sucess").style.display = "flex";
     document.getElementById("loginContainer").style.display = "none";
-    document.getElementById("changeForm").innerHTML = "Deseja sair?";
+    document.getElementById("changeForm").innerHTML = "Would you like to leave?"; //aqui
     document.getElementById("createContainer").style.display = "none";
   }
 }, 1500)
