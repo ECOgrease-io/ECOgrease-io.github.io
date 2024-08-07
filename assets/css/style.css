@@ -131,11 +131,9 @@ i {
 
 #section1 {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
 
-  background-image: url(../img/mainBg.png);
-  background-repeat: no-repeat;
-  background-size: 101vw;
+  background-color: #fdfdfd;
 
   display: flex;
   align-items: center;
@@ -183,6 +181,12 @@ i {
 }
 #section1 button:active {
   scale: 1.05;
+}
+
+.ino {
+  font-size: 7vw;
+  color: var(--color4);
+  font-weight: 700;
 }
 
 .imgContainer {

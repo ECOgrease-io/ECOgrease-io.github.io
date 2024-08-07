@@ -5,12 +5,6 @@ menuButton.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
-const sec2Button = document.getElementById("sec2Arrow");
-
-sec2Button.addEventListener("click", () => {
-  window.location.href = "#section2";
-});
-
 const headerLogo = document.getElementById("headerImg");
 
 headerLogo.addEventListener("click", () => {
